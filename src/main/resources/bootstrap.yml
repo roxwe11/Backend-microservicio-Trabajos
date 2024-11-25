@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: trabajo-Ch
+  cloud:
+    config:
+      uri: http://localhost:8880
+  servlet:
+    multipart:
+      # Límite de tamaño para archivos individuales (por ejemplo, 10MB)
+      max-file-size: 10MB
+      # Límite de tamaño para toda la solicitud, incluidos los archivos y los datos
+      max-request-size: 10MB
